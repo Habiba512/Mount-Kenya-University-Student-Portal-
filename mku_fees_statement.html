@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mount Kenya University - Online Fees Statement</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #fcfcfc 0%, #ffffff 100%);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo {
+            width: 100px;      /* adjust as needed */
+            height: 100px;     /* adjust as needed */
+            background: url("mku Logo.jpg") center/cover no-repeat;
+            border-radius: 50%;
+            background-color: #2c5f7c;
+        }
+        
+        .header-text h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000;
+        }
+        
+        .header-text p {
+            margin: 0;
+            font-size: 14px;
+            opacity: 0.9;
+            color: #000000;
+        }
+        
+        .nav-bar {
+            background-color: #397391;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        
+        .nav-item {
+            background-color: #397391;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-right: 1px solid #5a8ca5;
+            font-size: 13px;
+            font-weight: 700;
+        }
+        
+        .nav-item:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        
+        .sub-nav {
+            background-color: #ffffff;
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .sub-nav-item {
+            display: inline-block;
+            padding: 8px 15px;
+            color: #333;
+            text-decoration: underline;   /* underline links */
+            font-size: 12px;
+            border-right: 1px solid #ccc;
+        }
+        
+        .sub-nav-item:hover {
+            background-color: #ddd;
+        }
+        
+        .content {
+            max-width: 700px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .student-info {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .statement-title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        
+        .fees-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+        
+        .fees-table th {
+            background-color: #2c5f7c;
+            color: white;
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #1e4963;
+        }
+        
+        .fees-table td {
+            padding: 6px 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        
+        .fees-table .number {
+            text-align: right;
+        }
+        
+        .year-header {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .total-row {
+            background-color: #f8f8f8;
+            font-weight: bold;
+        }
+        
+        .grand-total-row {
+            background-color: #e8f4f8;
+            font-weight: bold;
+            color: #2c5f7c;
+        }
+        
+        .signature-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .signature-line {
+            display: inline-block;
+            width: 200px;
+            border-bottom: 1px solid #333;
+            margin: 0 20px;
+            height: 40px;
+        }
+        
+        .signature-label {
+            font-size: 11px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+            margin-top: 30px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"></div>
+        <div class="header-text">
+            <h1>Mount Kenya University</h1>
+            <p>Unlocking Infinite Possibilities</p>
+        </div>
+    </header>
+    
+    <nav class="nav-bar">
+        <a href="#" class="nav-item">HOME</a>
+        <a href="#" class="nav-item">INFORMATION UPDATE</a>
+        <a href="#" class="nav-item">FEES</a>
+        <a href="#" class="nav-item">TIMETABLES</a>
+        <a href="#" class="nav-item">COURSE REGISTRATION</a>
+        <a href="#" class="nav-item">RESULTS</a>
+        <a href="#" class="nav-item">MY REQUESTS</a>
+        <a href="#" class="nav-item">SIGN OUT</a>
+    </nav>
+    
+    <div class="sub-nav">
+        <a href="#" class="sub-nav-item">Fee Invoice / Structure</a>
+        <a href="#" class="sub-nav-item">Fee Statement</a>
+        <a href="#" class="sub-nav-item">Detailed Fee Statement</a>
+        <a href="#" class="sub-nav-item">E-Learning Portal</a>
+        <a href="#" class="sub-nav-item">MPesa Trans. Validation</a>
+    </div>
+    
+    <div class="content">
+        <div class="student-info">
+            BBIT/2022/51143 RAYMOND ABIGAEL ABIBA&nbsp;&nbsp;&nbsp;&nbsp;Thika (Day) , Main Campus (Thika)
+        </div>
+        
+        <div class="statement-title">Online Fees Statement</div>
+        
+        <table class="fees-table">
+            <tr>
+                <td colspan="6" style="font-weight: bold;">Currency : KSHS (KShs)</td>
+            </tr>
+        </table>
+        
+        <!-- Academic Year 2021/2022 -->
+        <table class="fees-table">
+            <tr class="year-header">
+                <td colspan="6"><strong>Academic Year : 2021/2022</strong></td>
+            </tr>
+            <tr>
+                <th>Transaction/ Receipt Number</th>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Debits DR</th>
+                <th>Credits CR</th>
+                <th>Balance</th>
+            </tr>
+            <tr>
+                <td>220820125119</td>
+                <td>20-AUG-2022</td>
+                <td>Fee Payment</td>
+                <td class="number"></td>
+                <td class="number">26,000.00</td>
+                <td class="number">-26,000.00</td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="3"><strong>Academic Year Totals :</strong></td>
+                <td class="number"><strong>0.00</strong></td>
+                <td class="number"><strong>26,000.00</strong></td>
+                <td class="number"><strong>-26,000.00</strong></td>
+            </tr>
+        </table>
+        
+        <!-- Academic Year 2022/2023 -->
+        <table class="fees-table">
+            <tr class="year-header">
+                <td colspan="6"><strong>Academic Year : 2022/2023</strong></td>
+            </tr>
+            <tr>
+                <th>Transaction/ Receipt Number</th>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Debits DR</th>
+                <th>Credits CR</th>
+                <th>Balance</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><strong>Opening Balance</strong></td>
+                <td class="number">0.00</td>
+                <td class="number">26,000.00</td>
+                <td class="number">-26,000.00</td>
+            </tr>
+            <tr>
+                <td>2022/2023-Jan/Apr Fees</td>
+                <td>29-JAN-2023</td>
+                <td>Fees Payable</td>
+                <td class="number">28,500.00</td>
+                <td class="number"></td>
+                <td class="number">2,500.00</td>
+            </tr>
+            <tr>
+                <td>2022/2023-May/Aug Fees</td>
+                <td>25-MAY-2023</td>
+                <td>Fees Payable</td>
+                <td class="number">28,500.00</td>
+                <td class="number"></td>
+                <td class="number">31,000.00</td>
+            </tr>
+            <tr>
+                <td>2022/2023-Sep/Dec Invoices</td>
+                <td>15-DEC-2022</td>
+                <td>Other Invoices</td>
+                <td class="number">31,000.00</td>
+                <td class="number"></td>
+                <td class="number">62,000.00</td>
+            </tr>
+            <tr>
+                <td>2022/2023-Sep/Dec Fees</td>
+                <td>21-SEP-2022</td>
+                <td>Fees Payable</td>
+                <td class="number">24,500.00</td>
+                <td class="number"></td>
+                <td class="number">86,500.00</td>
+            </tr>
+            <tr>
+                <td>220822053484</td>
+                <td>22-AUG-2022</td>
+                <td>Fee Payment</td>
+                <td class="number"></td>
+                <td class="number">24,500.00</td>
+                <td class="number">62,000.00</td>
+            </tr>
+            <tr>
+                <td>230309036833</td>
+                <td>09-JAN-2023</td>
+                <td>Fee Payment</td>
+                <td class="number"></td>
+                <td class="number">28,500.00</td>
+                <td class="number">33,500.00</td>
+            </tr>
+            <tr>
+                <td>230414147132</td>
+                <td>14-APR-2023</td>
+                <td>Fee Payment (MPesa)</td>
+                <td class="number"></td>
+                <td class="number">5,000.00</td>
+                <td class="number">28,500.00</td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="3"><strong>Academic Year Totals :</strong></td>
+                <td class="number"><strong>112,500.00</strong></td>
+                <td class="number"><strong>84,000.00</strong></td>
+                <td class="number"><strong>28,500.00</strong></td>
+            </tr>
+        </table>
+        
+        <!-- Academic Year 2023/2024 -->
+        <table class="fees-table">
+            <tr class="year-header">
+                <td colspan="6"><strong>Academic Year : 2023/2024</strong></td>
+            </tr>
+            <tr>
+                <th>Transaction/ Receipt Number</th>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Debits DR</th>
+                <th>Credits CR</th>
+                <th>Balance</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><strong>Opening Balance</strong></td>
+                <td class="number">28,500.00</td>
+                <td class="number">0.00</td>
+                <td class="number">28,500.00</td>
+            </tr>
+            <tr>
+                <td>2023/2024-Jan/Apr Fees</td>
+                <td>29-JAN-2024</td>
+                <td>Fees Payable</td>
+                <td class="number">24,500.00</td>
+                <td class="number"></td>
+                <td class="number">53,000.00</td>
+            </tr>
+            <tr>
+                <td>2023/2024-May/Aug Fees</td>
+                <td>30-MAY-2024</td>
+                <td>Fees Payable</td>
+                <td class="number">28,500.00</td>
+                <td class="number"></td>
+                <td class="number">81,500.00</td>
+            </tr>
+            <tr>
+                <td>2023/2024-Sep/Dec Fees</td>
+                <td>28-SEP-2023</td>
+                <td>Fees Payable</td>
+                <td class="number">28,500.00</td>
+                <td class="number"></td>
+                <td class="number">110,000.00</td>
+            </tr>
+            <tr>
+                <td>230512132458</td>
+                <td>12-MAY-2023</td>
+                <td>Fee Payment</td>
+                <td class="number"></td>
+                <td class="number">28,500.00</td>
+                <td class="number">81,500.00</td>
+            </tr>
+            <tr>
+                <td>230908198117</td>
+                <td>08-SEP-2023</td>
+                <td>Fee Payment</td>
+                <td class="number"></td>
+                <td class="number">28,500.00</td>
+                <td class="number">53,000.00</td>
+            </tr>
+            <tr>
+                <td>240117084828</td>
+                <td>17-JAN-2024</td>
+                <td>Fee Payment (MPesa)</td>
+                <td class="number"></td>
+                <td class="number">24,500.00</td>
+                <td class="number">28,500.00</td>
+            </tr>
+            <tr>
+                <td>240518093008</td>
+                <td>18-MAY-2024</td>
+                <td>Fee Payment (MPesa)</td>
+                <td class="number"></td>
+                <td class="number">28,500.00</td>
+                <td class="number">0.00</td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="3"><strong>Academic Year Totals :</strong></td>
+                <td class="number"><strong>110,000.00</strong></td>
+                <td class="number"><strong>110,000.00</strong></td>
+                <td class="number"><strong>0.00</strong></td>
+            </tr>
+        </table>
+        
+        <!-- Academic Year 2024/2025 -->
+        <table class="fees-table">
+            <tr class="year-header">
+                <td colspan="6"><strong>Academic Year : 2024/2025</strong></td>
+            </tr>
+            <tr>
+                <th>Transaction/ Receipt Number</th>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Debits DR</th>
+                <th>Credits CR</th>
+                <th>Balance</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><strong>Opening Balance</strong></td>
+                <td class="number"></td>
+                <td class="number"></td>
+                <td class="number">0.00</td>
+            </tr>
+            <tr>
+                <td>2024/2025-Jan/Apr Invoices</td>
+                <td>13-MAY-2025</td>
+                <td>Other Invoices</td>
+                <td class="number">10,000.00</td>
+                <td class="number"></td>
+                <td class="number">10,000.00</td>
+            </tr>
+            <tr>
+                <td>2024/2025-Jan/Apr Invoices</td>
+                <td>13-MAY-2025</td>
+                <td>Other Invoices</td>
+                <td class="number">14,500.00</td>
+                <td class="number"></td>
+                <td class="number">24,500.00</td>
+            </tr>
+            <tr>
+                <td>2024/2025-Jan/Apr Fees</td>
+                <td>09-FEB-2025</td>
+                <td>Fees Payable</td>
+                <td class="number">28,500.00</td>
+                <td class="number"></td>
+                <td class="number">53,000.00</td>
+            </tr>
+            <tr>
+                <td>2024/2025-May/Aug Fees</td>
+                <td>11-AUG-2025</td>
+                <td>Fees Payable</td>
+                <td class="number">0.00</td>
+                <td class="number"></td>
+                <td class="number">53,000.00</td>
+            </tr>
+            <tr>
+                <td>2024/2025-May/Aug Invoices</td>
+                <td>11-AUG-2025</td>
+                <td>Other Invoices</td>
+                <td class="number">2,400.00</td>
+                <td class="number"></td>
+                <td class="number">55,400.00</td>
+            </tr>
+            <tr>
+                <td>2024/2025-Sep/Dec Fees</td>
+                <td>29-SEP-2024</td>
+                <td>Fees Payable</td>
+                <td class="number">24,500.00</td>
+                <td class="number"></td>
+                <td class="number">79,900.00</td>
+            </tr>
+            <tr>
+                <td>240914050432</td>
+                <td>14-SEP-2024</td>
+                <td>Fee Payment (MPesa)</td>
+                <td class="number"></td>
+                <td class="number">24,500.00</td>
+                <td class="number">55,400.00</td>
+            </tr>
+            <tr>
+                <td>241022053911</td>
+                <td>22-OCT-2024</td>
+                <td>Fee Payment (MPesa)</td>
+                <td class="number"></td>
+                <td class="number">6,000.00</td>
+                <td class="number">49,400.00</td>
+            </tr>
+            <tr>
+                <td>250115146264</td>
+                <td>15-JAN-2025</td>
+                <td>Fee Payment (MPesa)</td>
+                <td class="number"></td>
+                <td class="number">28,500.00</td>
+                <td class="number">20,900.00</td>
+            </tr>
+            <tr>
+                <td>250513131636</td>
+                <td>13-MAY-2025</td>
+                <td>Fee Payment (MPesa)</td>
+                <td class="number"></td>
+                <td class="number">1,000.00</td>
+                <td class="number">19,900.00</td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="3"><strong>Academic Year Totals :</strong></td>
+                <td class="number"><strong>79,900.00</strong></td>
+                <td class="number"><strong>60,000.00</strong></td>
+                <td class="number"><strong>19,900.00</strong></td>
+            </tr>
+        </table>
+        
+        <!-- Academic Year 2025/2026 -->
+        <table class="fees-table">
+            <tr class="year-header">
+                <td colspan="6"><strong>Academic Year : 2025/2026</strong></td>
+            </tr>
+            <tr>
+                <th>Transaction/ Receipt Number</th>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Debits DR</th>
+                <th>Credits CR</th>
+                <th>Balance</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><strong>Opening Balance</strong></td>
+                <td class="number">19,900.00</td>
+                <td class="number">0.00</td>
+                <td class="number">19,900.00</td>
+            </tr>
+            <tr>
+                <td>250723074889</td>
+                <td>23-JUL-2025</td>
+                <td>Fee Payment (MPesa)</td>
+                <td class="number"></td>
+                <td class="number">19,900.00</td>
+                <td class="number">0.00</td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="3"><strong>Academic Year Totals :</strong></td>
+                <td class="number"><strong>19,900.00</strong></td>
+                <td class="number"><strong>19,900.00</strong></td>
+                <td class="number"><strong>0.00</strong></td>
+            </tr>
+            <tr class="grand-total-row">
+                <td colspan="3"><strong>Grand Totals :</strong></td>
+                <td class="number"><strong>322,300.00</strong></td>
+                <td class="number"><strong>322,300.00</strong></td>
+                <td class="number"><strong>0.00</strong></td>
+            </tr>
+        </table>
+        
+        <div style="margin-top: 20px; font-weight: bold;">
+            Closing Balance : 0.00
+        </div>
+        
+        <div class="signature-section">
+            <div style="display: inline-block; text-align: center; margin: 0 50px;">
+                <div class="signature-line"></div>
+                <div class="signature-label">Signed and Stamped</div>
+            </div>
+            <div style="display: inline-block; text-align: center; margin: 0 50px;">
+                <div class="signature-line"></div>
+                <div class="signature-label">Date Printed : 7-Sep-2025</div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 10px; font-size: 12px;">
+            For Finance Office
+        </div>
+        
+        <div class="footer">
+            <a href="#" style="color: #2c5f7c;">About Us</a>
+            <span style="float: right;">© 2025 Mount Kenya University - Hosted by <a href="#" style="color: #2c5f7c;">Fountain ICT Services</a></span>
+        </div>
+    </div>
+</body>
+</html>
