@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mount Kenya University - School of Computing and Informatics Fees Statement</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #fcfcfc 0%, #ffffff 100%);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            background: url("mku Logo.jpg") center/cover no-repeat;
+            border-radius: 50%;
+            background-color: #2c5f7c;
+        }
+        
+        .header-text h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000;
+        }
+        
+        .header-text p {
+            margin: 0;
+            font-size: 14px;
+            opacity: 0.9;
+            color: #000000;
+        }
+        
+        .nav-bar {
+            background-color: #397391;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .nav-item {
+            background-color: #397391;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-right: 1px solid #5a8ca5;
+            font-size: 13px;
+            font-weight: 700;
+        }
+        
+        .nav-item:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        
+        .sub-nav {
+            background-color: #ffffff;
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .sub-nav-item {
+            display: inline-block;
+            padding: 8px 15px;
+            color: #333;
+            text-decoration: underline;
+            font-size: 12px;
+            border-right: 1px solid #ccc;
+        }
+        
+        .sub-nav-item:hover {
+            background-color: #ddd;
+        }
+        
+        .content {
+            max-width: 700px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .student-info {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .school-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .school-header h2 {
+            margin: 5px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+        }
+        
+        .school-header h3 {
+            margin: 5px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000000;
+        }
+        
+        .registration-info {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 12px;
+            color: #333;
+        }
+        
+        .fees-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 11px;
+        }
+        
+        .fees-table th {
+            background-color: #2c5f7c;
+            color: white;
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #1e4963;
+            font-weight: bold;
+        }
+        
+        .fees-table td {
+            padding: 6px 8px;
+            border: 1px solid #333;
+            text-align: left;
+        }
+        
+        .fees-table .number {
+            text-align: right;
+        }
+        
+        .fees-table .center {
+            text-align: center;
+        }
+        
+        .year-header {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .total-row {
+            background-color: #f8f8f8;
+            font-weight: bold;
+        }
+        
+        .grand-total-row {
+            background-color: #e8f4f8;
+            font-weight: bold;
+            color: #2c5f7c;
+        }
+        
+        .closing-balance {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .signature-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .signature-line {
+            display: inline-block;
+            width: 300px;
+            border-bottom: 1px solid #333;
+            margin: 0 20px;
+            height: 30px;
+        }
+        
+        .signature-label {
+            font-size: 11px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 10px;
+            color: #666;
+            margin-top: 30px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo"></div>
+        <div class="header-text">
+            <h1>Mount Kenya University</h1>
+            <p>Unlocking Infinite Possibilities</p>
+        </div>
+    </header>
+    
+    <nav class="nav-bar">
+        <a href="#" class="nav-item">HOME</a>
+        <a href="#" class="nav-item">INFORMATION UPDATE</a>
+        <a href="#" class="nav-item">FEES</a>
+        <a href="#" class="nav-item">TIMETABLES</a>
+        <a href="#" class="nav-item">COURSE REGISTRATION</a>
+        <a href="#" class="nav-item">RESULTS</a>
+        <a href="#" class="nav-item">MY REQUESTS</a>
+        <a href="#" class="nav-item">SIGN OUT</a>
+    </nav>
+    
+    <div class="sub-nav">
+        <a href="#" class="sub-nav-item">Fee Invoice / Structure</a>
+        <a href="#" class="sub-nav-item">Fee Statement</a>
+        <a href="#" class="sub-nav-item">Detailed Fee Statement</a>
+        <a href="#" class="sub-nav-item">E-Learning Portal</a>
+        <a href="#" class="sub-nav-item">MPesa Trans. Validation</a>
+    </div>
+    
+    <div class="content">
+        <div class="student-info">
+            BBIT/2022/51143 RAYMOND ABIGAEL ABIBA&nbsp;&nbsp;&nbsp;&nbsp;Thika (Day) , Main Campus (Thika)
+        </div>
+        
+        <div class="school-header">
+            <h2>Mount Kenya University</h2>
+            <h3>SCHOOL OF COMPUTING AND INFORMATICS</h3>
+            <h3>Fees Statement</h3>
+        </div>
+        
+        <div class="registration-info">
+            <strong>Registration Number:</strong> BBIT/2022/51143 <strong>Names:</strong> RAYMOND ABIGAEL ABIBA<br>
+            <strong>Programme:</strong> BBIT Bachelor of Business and Information Technology 
+        </div>
+        
+        
+        <!-- Academic Year 2023/2024 -->
+        <table class="fees-table">
+            <tr>
+                <td colspan="6" style="font-weight: bold;">Currency : KSHS (KShs)</td>
+            </tr>
+            <tr class="year-header">
+                <td colspan="6"><strong>Academic Year : 2023/2024</strong></td>
+            </tr>
+            <tr>
+                <th>Transaction/ Receipt Number</th>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Debits DR</th>
+                <th>Credits CR</th>
+                <th>Balance</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>1 Tuition</td>
+                <td class="number"></td>
+                <td class="number"></td>
+                <td class="number">55,500.00</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>2 Statutory Fees</td>
+                <td class="number"></td>
+                <td class="number"></td>
+                <td class="number">12,000.00</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>3 Quality Assurance Fee</td>
+                <td class="number"></td>
+                <td class="number"></td>
+                <td class="number">1,000.00</td>
+            </tr>
+            <tr>
+                <td>2023/2024-May/Aug Fees</td>
+                <td>29-MAY-2024</td>
+                <td>Fees Payable</td>
+                <td class="number">68,500.00</td>
+                <td class="number"></td>
+                <td class="number">68,500.00</td>
+            </tr>
+            <tr>
+                <td>240501217600</td>
+                <td>02-MAY-2024</td>
+                <td>Tuition</td>
+                <td class="number"></td>
+                <td class="number">68,500.00</td>
+                <td class="number">0.00</td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="3"><strong>Academic Year Totals :</strong></td>
+                <td class="number"><strong>68,500.00</strong></td>
+                <td class="number"><strong>68,500.00</strong></td>
+                <td class="number"><strong>0.00</strong></td>
+            </tr>
+        </table>
+        
+        <!-- Academic Year 2024/2025 -->
+        <table class="fees-table">
+            <tr class="year-header">
+                <td colspan="6"><strong>Academic Year : 2024/2025</strong></td>
+            </tr>
+            <tr>
+                <th>Transaction/ Receipt Number</th>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Debits DR</th>
+                <th>Credits CR</th>
+                <th>Balance</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><strong>Opening Balance</strong></td>
+                <td class="number"></td>
+                <td class="number"></td>
+                <td class="number">0.00</td>
+            </tr>
+            <tr>
+                <td>2024/2025-Jan/Apr Fees</td>
+                <td>09-FEB-2025</td>
+                <td>Tuition</td>
+                <td class="number">55,500.00</td>
+                <td class="number"></td>
+                <td class="number">55,500.00</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>1 Tuition</td>
+                <td class="number"></td>
+                <td class="number"></td>
+                <td class="number">55,500.00</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>2 Statutory Fees</td>
+                <td class="number"></td>
+                <td class="number"></td>
+                <td class="number">12,000.00</td>
+            </tr>
+            <tr>
+                <td>2024/2025-May/Aug Fees</td>
+                <td>19-MAY-2025</td>
+                <td>Fees Payable</td>
+                <td class="number">67,500.00</td>
+                <td class="number"></td>
+                <td class="number">123,000.00</td>
+            </tr>
+            <tr>
+                <td>240715108801</td>
+                <td>15-JUL-2024</td>
+                <td>Tuition</td>
+                <td class="number"></td>
+                <td class="number">10,000.00</td>
+                <td class="number">113,000.00</td>
+            </tr>
+            <tr>
+                <td>240912074210</td>
+                <td>12-SEP-2024</td>
+                <td>Tuition</td>
+                <td class="number"></td>
+                <td class="number">23,330.00</td>
+                <td class="number">89,670.00</td>
+            </tr>
+            <tr>
+                <td>241108094283</td>
+                <td>08-NOV-2024</td>
+                <td>Tuition</td>
+                <td class="number"></td>
+                <td class="number">22,150.00</td>
+                <td class="number">67,500.00</td>
+            </tr>
+            <tr>
+                <td>2024/2025-Sep/Dec Fees</td>
+                <td>24-OCT-2024</td>
+                <td>Tuition</td>
+                <td class="number">55,500.00</td>
+                <td class="number"></td>
+                <td class="number">123,000.00</td>
+            </tr>
+            <tr>
+                <td>250215062653</td>
+                <td>15-FEB-2025</td>
+                <td>Tuition</td>
+                <td class="number"></td>
+                <td class="number">33,350.00</td>
+                <td class="number">89,650.00</td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="3"><strong>Academic Year Totals :</strong></td>
+                <td class="number"><strong>178,500.00</strong></td>
+                <td class="number"><strong>88,850.00</strong></td>
+                <td class="number"><strong>89,650.00</strong></td>
+            </tr>
+        </table>
+        
+        <!-- Academic Year 2025/2026 -->
+        <table class="fees-table">
+            <tr class="year-header">
+                <td colspan="6"><strong>Academic Year : 2025/2026</strong></td>
+            </tr>
+            <tr>
+                <th>Transaction/ Receipt Number</th>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Debits DR</th>
+                <th>Credits CR</th>
+                <th>Balance</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><strong>Opening Balance</strong></td>
+                <td class="number">89,650.00</td>
+                <td class="number">0.00</td>
+                <td class="number">89,650.00</td>
+            </tr>
+            <tr>
+                <td>250312146439</td>
+                <td>12-MAR-2025</td>
+                <td>Tuition</td>
+                <td class="number"></td>
+                <td class="number">22,170.00</td>
+                <td class="number">67,480.00</td>
+            </tr>
+            <tr>
+                <td>250526165206</td>
+                <td>26-MAY-2025</td>
+                <td>Tuition</td>
+                <td class="number"></td>
+                <td class="number">20,500.00</td>
+                <td class="number">46,980.00</td>
+            </tr>
+            <tr>
+                <td>250702085241</td>
+                <td>02-JUL-2025</td>
+                <td>Tuition</td>
+                <td class="number"></td>
+                <td class="number">46,980.00</td>
+                <td class="number">00.00</td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="3"><strong>Academic Year Totals :</strong></td>
+                <td class="number"><strong>89,650.00</strong></td>
+                <td class="number"><strong>89,650.00</strong></td>
+                <td class="number"><strong>00.00</strong></td>
+            </tr>
+            <tr class="grand-total-row">
+                <td colspan="3"><strong>Grand Totals :</strong></td>
+                <td class="number"><strong>336,650.00</strong></td>
+                <td class="number"><strong>336,650.00</strong></td>
+                <td class="number"><strong>00.00</strong></td>
+            </tr>
+        </table>
+        
+        <div class="closing-balance">
+            <strong>Closing Balance : 00.00</strong>
+        </div>
+        
+        <div class="signature-section">
+            <div style="display: inline-block; text-align: center; margin: 0 20px;">
+                <div class="signature-line"></div>
+                <div class="signature-label">Signed and Stamped</div>
+            </div>
+            <div style="display: inline-block; text-align: center; margin: 0 20px;">
+                <div class="signature-line"></div>
+                <div class="signature-label">Date Printed : 07-Sep-2025</div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 10px; font-size: 12px;">
+            For Finance Office
+        </div>
+        
+        <div class="footer">
+            <a href="#" style="color: #2c5f7c;">About Us</a>
+            <span style="float: right;">© 2025 <a href="#" style="color: #2c5f7c;">Mount Kenya University</a> - Hosted by <a href="#" style="color: #2c5f7c;">Fountain ICT Services</a></span>
+        </div>
+    </div>
+</body>
+</html>
